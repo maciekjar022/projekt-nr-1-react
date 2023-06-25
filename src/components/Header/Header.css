@@ -1,0 +1,79 @@
+.header {
+    height: calc(100vh - 50px);
+    background-image: url('/src/img/airsoft-4498480_1280.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header .shadow {
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    width: 92%;
+    margin: 0 auto
+}
+
+.header .heading {
+    max-width: 400px;
+    font-size: 36px;
+    color: #ffff;
+    margin: 175px 0 0 15px;
+}
+
+.header .description {
+    max-width: 275px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #ffff;
+    margin: 60px 0 0 15px;
+
+}
+
+.header .offer-btn {
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #ffff;
+    width: 115px;
+    height: 30px;
+    margin: 60px 0 0 15px;
+    text-align: center;
+    line-height: 30px;
+    letter-spacing: 2px;
+    border: 3px solid #ffff;
+    transition: 1s;
+}
+
+@media screen and (min-width: 1024px) {
+    .header .container {
+        justify-content: center;
+        width: 960px;
+        height: 100%;
+    }
+
+    .header .heading {
+        max-width: 580px;
+    }
+
+    .header .description {
+        margin-top: 62px;
+        margin-bottom: 42px;
+    }
+
+    .header .offer-btn {
+        width: 165px;
+        height: 40px;
+        text-align: center;
+        line-height: 40px;
+    }
+
+    .header .offer-btn:hover {
+        background-color: #ffffff;
+        color: #000000;
+    }
+}

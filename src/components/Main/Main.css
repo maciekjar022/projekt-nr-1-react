@@ -1,0 +1,103 @@
+.main {
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+
+.main .specjalist1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-specjalist {
+    display: flex;
+    flex-direction: column;
+    width: 92%;
+    margin: 0 auto;
+    align-items: center;
+    padding: 40px 0 40px 0;
+}
+
+.specjalist1 h2 {
+
+    height: 100px;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 100px;
+}
+
+.container-specjalist .items1:nth-child(1) {
+    display: flex;
+    width: 250px;
+    height: 250px;
+    left: 95px;
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+    background-image: url("/src/img/military-1442907_640a.jpg");
+}
+
+.container-specjalist .items1 h3 {
+    font-weight: 700;
+    margin: 40px 0 20px 0
+}
+
+.container-specjalist .items-description {
+    text-align: justify
+}
+
+.container-specjalist .items2:nth-child(1) {
+    display: flex;
+    width: 250px;
+    height: 250px;
+    left: 95px;
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+    background-image: url("/src/img/soldier-4771917_640a.jpg");
+}
+
+.container-specjalist .items2 h3 {
+    font-weight: 700;
+    margin: 40px 0 20px 0
+}
+
+@media screen and (min-width: 1024px) {
+    .specjalist1 .container-specjalist {
+        width: 960px;
+        flex-direction: row;
+    }
+
+    .specjalist1 h2 {
+        margin: 0 auto;
+        width: 960px;
+    }
+
+    .container-specjalist .items1:nth-child(2) {
+        left: 200px;
+        font-size: 18px;
+        height: 200px;
+        margin-left: 60px;
+        margin-top: 40px;
+    }
+
+    .specjalist2 .container-specjalist {
+        width: 960px;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .container-specjalist .items2:nth-child(2) {
+        display: block;
+        height: 200px;
+        text-align: right;
+        font-size: 18px;
+        margin-right: 60px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+
+}
